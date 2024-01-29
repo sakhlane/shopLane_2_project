@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <title>shop Lane Project </title>
+</head>
+<body>
+    <!-- HEADER OR MENU SECTION  -->
+    <nav id="nav-bar">
+        
+        <div id="nav-bar-left">
+            <h1 id="logo">shop <span>lane</span></h1>
+              <a href="#">clothing</a>
+            <a href="#">accessories</a>
+        </div>
+        <div id="nav-search-bar">
+            <label for="search"><i class="fa-solid fa-magnifying-glass"></i></label>
+            <!-- <i class="fa-solid fa-magnifying-glass"></i> -->
+            <input type="text" name="search" id="search" placeholder="Search for Clothing and Accessories">
+        </div>
+        <div id="nav-bar-right">
+            <div id="cart-wrapper">
+                <p id="cart-count"></p>
+                <a href="#"> <i class="fa-solid fa-cart-shopping  shopping-cart-img"></i></a>
+            </div>
+            <img src="https://test-hosting-8f9bf.web.app/assets/avatar.jpg" alt="autar-image">
+        </div>
+    </nav>
+    <!-- CAROUSAL SECTION  note: -> code from swiper.js site -->
+    <section id="carousal">
+         <!-- Slider main container -->
+         <div class="swiper">
+             <!-- Additional required wrapper -->
+             <div class="swiper-wrapper">
+                 <!-- Slides -->
+               <div class="swiper-slide"><img src="./images/carousal_1.png" alt="image1"></div>
+            <div class="swiper-slide"><img src="./images/carousal_2.png" alt="image2"></div>
+             <div class="swiper-slide"><img src="./images/carousal_3.png" alt="image3"></div>
+             <div class="swiper-slide"><img src="./images/carousal_4.png" alt="image4"></div>
+                 
+             </div>
+             ...
+             <!-- If we need pagination -->
+         <div class="swiper-pagination"></div>
+  
+         <!-- If we need navigation buttons -->
+         <!-- <div class="swiper-button-prev"></div>
+         <div class="swiper-button-next"></div> -->
+  
+  </div>
+    </section>
+
+    <!-- CLOTHING FOR MEN AND WOMEN SECTTION -->
+    <section id="clothing-section">
+        <h2>Clothing for Men and Women</h2>
+        <div id="product_container">
+            
+        </div>
+    </section>
+    <!-- ACCESSORIES FOR MEN AND WOMEN SECTION -->
+    <section id="Accesories-section">
+        <h2>Accesories for Men and Women</h2>
+        <div id="product_container_Accessories">
+            
+        </div>
+    </section>
+    <!-- FOOTER SECTION -->
+    <section id="footer-section">
+        <footer>
+            <div class="footer-content">
+              <section class="footer-detail">
+                   <p class="footer-heading">online store</p>
+                   <a href="/" class="footer-link">men clothing</a>
+                   <a href="/" class="footer-link">women clothing</a>
+                   <a href="/" class="footer-link">men accessories</a>
+                   <a href="/" class="footer-link">women accessories</a>
+                   
+              </section>
+              <section class="footer-detail">
+               <p class="footer-heading">helpful links</p>
+               <a href="/" class="footer-link">home</a>
+               <a href="/" class="footer-link">about</a>
+               <a href="/" class="footer-link">contact</a>
+               
+              </section>
+              <section class="footer-detail">
+                 <p class="footer-heading">partners</p>
+                 <a href="/" class="footer-link">zara</a>
+                 <a href="/" class="footer-link">pantaloons</a>
+                 <a href="/" class="footer-link">levis</a>
+                 <a href="/" class="footer-link">ucb</a>
+                 <a href="/" class="footer-link">+ many more</a>
+                
+              </section>
+              <section class="footer-detail">
+                <p class="footer-heading">address</p>
+                <a href="/" class="footer-link">Building 101</a>
+                <a href="/" class="footer-link">central avenue</a>
+                <a href="/" class="footer-link">LA - 902722</a>
+                <a href="/" class="footer-link">Unaited state</a>
+              
+              </section>
+              </div>
+              <img class = "logo-img" src="./images/edyoda-logo/edyoda_logo.png" alt="logo-img">
+           </footer>
+        </section>
+    <!-- SCRIPTS FOR CAROUSAL note: -> copy form swiper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+  // Optional parameters
+          autoplay:{
+            delay: 2000,
+            disebleOnInteraction:false,
+          },
+         loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+
+});
+    </script>
+    <script src="main.js" ></script>
+</body>
+</html>
